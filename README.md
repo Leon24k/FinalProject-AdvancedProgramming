@@ -1,5 +1,4 @@
-# FinalProject-AdvancedProgramming
-
+<h1 align="center">FinalProject-Advanced-Programming</h1>
 <h1 align="center">STUDENT MANAGEMENT SYSTEM</h1>
 
 
