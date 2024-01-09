@@ -15,9 +15,9 @@ def login():
 root = tk.Tk()
 
 # create window
-root.geometry('1280x768+275+100')
+root.geometry('1280x720+275+100')
 root.resizable(0,0)
-root.title('Student Management System')
+root.title('Sistem Manajemen Siswa')
 
 #icon for the window
 icon = ImageTk.PhotoImage(file=r'icon.png')

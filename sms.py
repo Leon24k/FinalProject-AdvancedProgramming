@@ -371,7 +371,7 @@ window.set_theme('breeze')
 # create window
 window.geometry('1280x768+275+100')
 window.resizable(0,0)
-window.title('Student Management System')
+window.title('Sistem Manajemen Mahasiswa')
 window.configure(bg='#9f00c5')
 
 # icon for the window
@@ -385,7 +385,7 @@ datetime_label.place(x=47, y=10)
 clock()
 
 # create name label
-name_label = tk.Label(window, text='STUDENT MANAGEMENT SYSTEM', font=('Microsoft Sans Serif', 20,'bold'), width=30, bg='#9f00c5', fg='#080808')
+name_label = tk.Label(window, text='Sistem Manajemen Mahasiswa', font=('Microsoft Sans Serif', 20,'bold'), width=30, bg='#9f00c5', fg='#080808')
 name_label.place(x=300, y=20)
 
 # create a connect button for database
@@ -403,42 +403,42 @@ logo_label = tk.Label(left_frame, image=logo_img, bg='#9f00c5')
 logo_label.grid(row=0, column=0, padx=20, pady=10)
 
 # add student button
-add_student_button = ttk.Button(left_frame, text='Add Student', cursor='hand2', width=25, state='disabled', 
+add_student_button = ttk.Button(left_frame, text='Tambah Mahasiswa', cursor='hand2', width=25, state='disabled',
                                 command = lambda:label_entry_data('Add Student Details', 'ADD', add_student))
 add_student_button.grid(row=1, column=0, padx=20, pady=20)
 
 # delete student button
-delete_student_button = ttk.Button(left_frame, text='Delete Student', cursor='hand2', width=25, state='disabled', 
+delete_student_button = ttk.Button(left_frame, text='Hapus Mahasiswa', cursor='hand2', width=25, state='disabled',
                                    command=delete_student)
 delete_student_button.grid(row=2, column=0, padx=20, pady=20)
 
 # search student button
-search_student_button = ttk.Button(left_frame, text='Search Student', cursor='hand2', width=25, state='disabled', 
+search_student_button = ttk.Button(left_frame, text='Cari Mahasiswa', cursor='hand2', width=25, state='disabled',
                                    command = lambda:label_entry_data('Search Student Details', 'SEARCH', search_student))
 search_student_button.grid(row=3, column=0, padx=20, pady=20)
 
 # update student button
-update_student_button = ttk.Button(left_frame, text='Update Student', cursor='hand2', width=25, state='disabled', 
+update_student_button = ttk.Button(left_frame, text='Update Mahasiswa', cursor='hand2', width=25, state='disabled',
                                    command = lambda:label_entry_data('Update Student Details', 'UPDATE', update_student))
 update_student_button.grid(row=4, column=0, padx=20, pady=20)
 
 # show student button
-show_student_button = ttk.Button(left_frame, text='Show Student', cursor='hand2', width=25, state='disabled', 
+show_student_button = ttk.Button(left_frame, text='Tampilkan Mahasiswa', cursor='hand2', width=25, state='disabled',
                                  command=show_student)
 show_student_button.grid(row=5, column=0, padx=20, pady=20)
 
 # clear table
-clear_student_button = ttk.Button(left_frame, text='Clear Table', cursor='hand2', width=25, state='disabled', 
+clear_student_button = ttk.Button(left_frame, text='Bersihkan Tabel', cursor='hand2', width=25, state='disabled',
                                     command=clear_table)
 clear_student_button.grid(row=6, column=0, padx=20, pady=20)
 
 # export data button
-export_student_button = ttk.Button(left_frame, text='Export Student', cursor='hand2', width=25, state='disabled',
+export_student_button = ttk.Button(left_frame, text='Export Data', cursor='hand2', width=25, state='disabled',
                                    command=export_data)
 export_student_button.grid(row=7, column=0, padx=20, pady=20)
 
 # exit button
-exit_student_button = ttk.Button(left_frame, text='EXIT', cursor='hand2', width=25,
+exit_student_button = ttk.Button(left_frame, text='KELUAR', cursor='hand2', width=25,
                                  command=exit)
 exit_student_button.grid(row=8, column=0, padx=20, pady=40)
 
@@ -466,16 +466,16 @@ scroll_Bar_y.pack(side='right', fill='y')
 student_table.pack(fill='both', expand=1)
 
 # specifying a name
-student_table.heading('Reg', text='Registration Number')
-student_table.heading('Name', text='Name')
-student_table.heading('D.O.B', text='Date of Birth')
-student_table.heading('Gender', text='Gender')
+student_table.heading('Reg', text='Registration Number/Nim')
+student_table.heading('Name', text='Nama')
+student_table.heading('D.O.B', text='Tanggal Lahir')
+student_table.heading('Gender', text='Jenis Kelamin')
 student_table.heading('Blood Group', text='Blood Group')
-student_table.heading('Dept', text='Department')
-student_table.heading('Batch', text='Batch')
-student_table.heading('Contact', text='Contact')
-student_table.heading('Mail', text='Mail ID')
-student_table.heading('Address', text='Address')
+student_table.heading('Dept', text='Fakultas')
+student_table.heading('Batch', text='Angkatan')
+student_table.heading('Contact', text='Nomor Telepon')
+student_table.heading('Mail', text='Email')
+student_table.heading('Address', text='Alamat')
 
 student_table.config(show='headings')
 
