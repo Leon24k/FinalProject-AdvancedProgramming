@@ -33,17 +33,17 @@ A student management system (software) project is a graphical user interface (GU
 
 * MySQL
 
+## Prerequisites
+- **MySQL Database**: Ensure that MySQL is installed and configured.
+
+- Additionally, it's necessary to have a local server environment such as **XAMPP or Laragon with PHPMyAdmin** for database management.
+
 
 ## Installation
 
-* Download `.exe` file from the [**Latest Release**](https://github.com/Leon24k/FinalProject-AdvancedProgramming)
+* Download `.rar` file from the [**Latest Release**](https://github.com/Leon24k/FinalProject-AdvancedProgramming/releases/tag/v1.0)
 ```bash
-  Just run the System Management System.exe file
-```
-
-* Download `.zip` file from the [**Latest Release**](https://github.com/Leon24k/FinalProject-AdvancedProgramming)
-```bash
-  Extract and run the System Management System.exe file
+  Extract and run the main.py file
 ```
 
 ### Installation Process :
@@ -52,6 +52,7 @@ A student management system (software) project is a graphical user interface (GU
     git clone https://github.com/Leon24k/FinalProject-AdvancedProgramming
 
 **Please Make Sure** : The Mysql database should be installed. The following python modules should be installed mentioned below the introduction.
+
 **To Install the Python Module** : Use the following command
 
     pip install pillow
@@ -69,7 +70,6 @@ A student management system (software) project is a graphical user interface (GU
     pip install PyMySql
 <br />
 
-<br />
 Run these python file :
 
     py main.py
