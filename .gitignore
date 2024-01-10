@@ -2,3 +2,4 @@ venv/
 dist/
 build/
 sms.spec
+output/

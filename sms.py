@@ -46,7 +46,7 @@ def label_entry_data(title, button_text, cmd):
     window_screen.configure(bg='#a713da')
     window_screen.iconphoto(False, icon)
     
-    # registraion number label and entry
+    # registration number label and entry
     regno_label = tk.Label(window_screen, text='Registration Number', font=('Comic Sans MS', 15, 'bold'), bg='#a713da', fg='#080808')
     regno_label.grid(row=0, column=0, padx=30, pady=15)
     regno_entry = tk.Entry(window_screen, font=('Comic Sans MS', 13, 'bold'), fg='#a713da',  width=30)
