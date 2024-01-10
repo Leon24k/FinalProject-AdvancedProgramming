@@ -40,6 +40,11 @@ A student management system (software) project is a graphical user interface (GU
 
 
 ## Installation
+* Download `.exe` file from the [**Latest Release**](https://github.com/Leon24k/FinalProject-AdvancedProgramming/releases/tag/v1.0)
+```executable files
+  run the sms.exe or main.exe file
+```
+
 
 * Download `.rar` file from the [**Latest Release**](https://github.com/Leon24k/FinalProject-AdvancedProgramming/releases/tag/v1.0)
 ```bash
