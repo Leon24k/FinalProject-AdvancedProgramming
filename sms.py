@@ -1,13 +1,27 @@
 import tkinter as tk
 from tkinter import ttk 
-from PIL import ImageTk
+from PIL import Image, ImageTk
 from tkinter import messagebox
 from tkinter import filedialog
 import ttkthemes
 import pymysql
 import time
 import pandas as pd
+import requests
+from io import BytesIO
 
+def fetch_image(url):
+    response = requests.get(url)
+    img = ImageTk.PhotoImage(Image.open(BytesIO(response.content)))
+    return img
+
+# Fetch images using the function
+icon_url = "https://upcdn.io/W142iQE/raw/imageApi/icon.png"
+bg_url = "https://upcdn.io/W142iQE/raw/imageApi/bg.jpg"
+login_url = "https://upcdn.io/W142iQE/raw/imageApi/login.png"
+uname_url = "https://upcdn.io/W142iQE/raw/imageApi/uname.png"
+pass_url = "https://upcdn.io/W142iQE/raw/imageApi/pass.png"
+logo_url = "https://upcdn.io/W142iQE/raw/imageApi/logo.png"
 
 def clock():
     global current_date, current_time
@@ -376,7 +390,7 @@ window.configure(bg='#9f00c5')
 
 # icon for the window
 global icon
-icon = ImageTk.PhotoImage(file=r'icon.png')
+icon = fetch_image(icon_url)
 window.iconphoto(False, icon)
 
 # create date and time label
@@ -398,7 +412,7 @@ left_frame = tk.Frame(window, bg='#9f00c5')
 left_frame.place(x=25, y=80, width=300, height=650)
 
 # create logo image
-logo_img = ImageTk.PhotoImage(file=r'logo.png')
+logo_img = fetch_image(logo_url)
 logo_label = tk.Label(left_frame, image=logo_img, bg='#9f00c5')
 logo_label.grid(row=0, column=0, padx=20, pady=10)
 
